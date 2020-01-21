@@ -10,7 +10,7 @@ import "./Posts.css";
 const Post = (props) => {
   // set up state for the likes
   
-console.log(props);
+// console.log(props);
   return (
     <div className="post-border">
       <PostHeader
@@ -28,8 +28,7 @@ console.log(props);
       </div>
       <LikeSection />
       <CommentSection
-        postId={props.data.comments.username}
-        comments={props.data.comments.text}
+        comments={props.data.comments}
       />
     </div>
   );
